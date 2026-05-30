@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya | Instructional Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Surya <span>Bala</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Surya</span></h1>
+            <h2>Instructional Designer & E-Learning Developer</h2>
+            <p>Bridging the gap between complex information and intuitive learning experiences using data-driven instructional strategies.</p>
+            <a href="#portfolio" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am an Instructional Designer dedicated to crafting engaging, learner-centric experiences. Leveraging frameworks like <strong>ADDIE</strong> and <strong>SAM</strong>, I transform raw instructional content into interactive digital courses that drive performance and behavioral change.</p>
+                    <p>My approach combines cognitive psychology, user experience design (UX), and interactive multimedia to create accessible learning paths for diverse audiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Tools & Methodologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h3>Authoring Tools</h3>
+                    <p>Articulate Storyline 360, Rise 360, Adobe Captivate</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-video"></i>
+                    <h3>Multimedia</h3>
+                    <p>Camtasia, Adobe Premiere Pro, Vyond, Audacity</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>LMS Ecosystems</h3>
+                    <p>Moodle, Canvas, Blackboard, Docebo</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-brain"></i>
+                    <h3>ID Theories</h3>
+                    <p>ADDIE, Kirkpatrick Evaluation, Bloom's Taxonomy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="card-img" style="background: #34495e; height: 200px; display: flex; align-items: center; justify-content: center; color: white;">
+                        <i class="fa-solid fa-laptop-code fa-3x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3>Compliance Training Module</h3>
+                        <p>An interactive Articulate Storyline module built to gamify annual corporate compliance updates.</p>
+                        <a href="#" class="project-link" onclick="openModal('modal1')">View Case Study</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-img" style="background: #2c3e50; height: 200px; display: flex; align-items: center; justify-content: center; color: white;">
+                        <i class="fa-solid fa-mobile-screen fa-3x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3>Mobile Learning Micro-courses</h3>
+                        <p>A suite of dynamic micro-learning assets optimized using Articulate Rise for on-the-go retail staff.</p>
+                        <a href="#" class="project-link" onclick="openModal('modal2')">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+            <h2>Compliance Training Module</h2>
+            <p><strong>Challenge:</strong> Low completion and engagement rates on text-heavy legacy compliance materials.</p>
+            <p><strong>Solution:</strong> Re-designed using a scenario-based branch mapping strategy in Storyline 360.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+            <h2>Mobile Learning Micro-courses</h2>
+            <p><strong>Challenge:</strong> Dispersed workforce unable to sit down for 30-minute desktop modules.</p>
+            <p><strong>Solution:</strong> Developed 3-5 minute highly focused visual components utilizing responsive mobile grids.</p>
+        </div>
+    </div>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Interested in collaborating on an e-learning initiative?</p>
+            <div class="social-links">
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                <a href="mailto:youremail@example.com"><i class="fa-solid fa-envelope fa-2x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Surya Bala. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
