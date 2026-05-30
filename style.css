@@ -1,0 +1,401 @@
+/* Premium Typography & Variable Palette Defaults */
+:root {
+    --primary-color: #1a1a1a;
+    --accent-color: #2563eb;
+    --text-dark: #2d3748;
+    --text-light: #718096;
+    --bg-light: #f8fafc;
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--text-dark);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .logo, .btn, .pre-title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 6rem 2rem;
+}
+
+/* Luxury Modern Header Navigation */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    z-index: 1000;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 2.5rem;
+    transition: var(--transition-smooth);
+}
+
+.nav-links li a:hover {
+    color: var(--accent-color);
+}
+
+/* Minimalist Premium Hero Design */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-light);
+    padding: 0 10%;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.pre-title {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.hero-content .highlight {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--primary-color);
+    background: linear-gradient(120deg, var(--accent-color), #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btn {
+    padding: 1rem 2.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: var(--transition-smooth);
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    border: 1px solid #cbd5e1;
+    color: var(--text-dark);
+}
+
+.btn-secondary:hover {
+    background: #f1f5f9;
+}
+
+/* Asymmetric Split Layout (About) */
+.about-split {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.about-title-block h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.accent-line {
+    width: 50px;
+    height: 4px;
+    background: var(--accent-color);
+    margin-top: 1rem;
+}
+
+.about-text-block p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* Clean Matrix Feature Grids */
+.skills-section {
+    background: var(--bg-light);
+}
+
+.center-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.skill-card {
+    background: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition-smooth);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.icon-wrapper {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.skill-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.skill-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* Premium Visual Portfolio Cards */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 3rem;
+}
+
+.portfolio-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition-smooth);
+    border: 1px solid #f1f5f9;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+}
+
+.card-image-placeholder {
+    height: 280px;
+    position: relative;
+}
+
+.img-bg-1 { background: linear-gradient(135deg, #1e293b, #0f172a); }
+.img-bg-2 { background: linear-gradient(135deg, #334155, #1e293b); }
+
+.badge {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+}
+
+.card-content {
+    padding: 2.5rem;
+}
+
+.card-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.card-content p {
+    color: var(--text-light);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.project-btn {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition-smooth);
+}
+
+.project-btn:hover {
+    gap: 1rem;
+}
+
+/* Contact Strip Layout */
+.contact-section {
+    background: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+}
+
+.contact-section h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+.contact-section p { color: #94a3b8; font-size: 1.1rem; margin-bottom: 3rem; }
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.contact-item {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: var(--transition-smooth);
+}
+
+.contact-item:hover { color: var(--accent-color); }
+
+footer {
+    background: #111111;
+    color: #475569;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
+    border-top: 1px solid #1e293b;
+}
+
+/* Immersive Clean Modals */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(8px);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 8% auto;
+    padding: 3.5rem;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 16px;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+}
+
+.modal-tag {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.modal-content h2 { margin-top: 0.5rem; text-align: left; margin-bottom: 1.5rem; }
+.modal-content h4 { margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem; }
+.modal-content p { color: var(--text-light); line-height: 1.7; }
+
+.close-btn {
+    position: absolute;
+    right: 2.5rem;
+    top: 2rem;
+    font-size: 32px;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+.close-btn:hover { color: var(--primary-color); }
+
+/* Responsive Media Engine overrides */
+@media screen and (max-width: 968px) {
+    .about-split { grid-template-columns: 1fr; gap: 1.5rem; }
+    .portfolio-grid { grid-template-columns: 1fr; }
+    .hero-content h1 { font-size: 2.5rem; }
+}
+
+.burger { display: none; }
